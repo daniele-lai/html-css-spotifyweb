@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: #fff;
+}
+
+main {
+  height: calc(100% - 100px);
+  display: flex;
+}
+
+.grey {
+  color: #717171;
+}
+
+.upgrade_bar {
+  position: fixed;
+  top: 0;
+  height: 55px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+aside {
+  height: 100%;
+  width: 240px;
+  background-color: #000000;
+}
+
+.aside_bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist {
+  overflow: auto;
+  height: 181px;
+}
+
+.album {
+  height: 100%;
+  width: 100%;
+  background-color: #141922;
+  overflow: auto;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+  background-color: #282828;
+}
