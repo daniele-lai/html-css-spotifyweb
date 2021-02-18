@@ -32,14 +32,45 @@ aside {
   background-color: #000000;
 }
 
+/* Barra aside */
 .aside_bar {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.aside_bar nav {
+  padding: 5px 0;
+}
+
+.aside_bar nav ul {
+  list-style: none;
+}
+
+.aside_bar a {
+  text-decoration: none;
+  color: #717171;
+}
+
+.aside_bar a:hover {
+  color: #fff;
+}
+
+.aside_bar ul li a img {
+  height: 20px;
 }
 
 .playlist {
   overflow: auto;
-  height: 181px;
+  height: 455px;
+}
+
+.john_doe {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: flex-end
 }
 
 .album {
