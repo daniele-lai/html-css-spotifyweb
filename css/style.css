@@ -18,15 +18,16 @@ main {
   color: #717171;
 }
 
+/* Barra Upgrade */
 .upgrade_bar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   top: 0;
   height: 55px;
-  width: 100%;
+  width: calc(100% - 201px);
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -47,13 +48,14 @@ main {
   transform: scale(1.1);
 }
 
+/* Barra aside */
+
 aside {
   height: 100%;
   width: 240px;
   background-color: #000000;
 }
 
-/* Barra aside */
 .aside_bar {
   display: flex;
   flex-direction: column;
@@ -94,11 +96,40 @@ aside {
   justify-content: flex-end
 }
 
+/* Sezione album */
 .album {
   height: 100%;
   width: 100%;
+  padding-top: 65px;
   background-color: #141922;
   overflow: auto;
+}
+
+.menu_2 {
+  text-align: center;
+}
+
+.menu_2 ul li {
+  display: inline-block;
+}
+
+.menu_2 ul li a {
+  text-decoration: none;
+  color: #717171;
+  padding: 5px;
+}
+
+.recently_played {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.album h2, .recently_played {
+  margin-left: 10px;
+}
+
+.disc {
+  flex-basis: calc(100% / 6);
 }
 
 footer {
