@@ -24,6 +24,10 @@ main {
   text-transform: uppercase;
 }
 
+.bold {
+  font-weight: 600;
+}
+
 /* Barra Upgrade */
 .upgrade_bar {
   display: flex;
@@ -38,11 +42,12 @@ main {
 }
 
 .btn {
-  margin-right: 5px;
-  padding: 6px 15px;
+  margin-right: 20px;
+  padding: 9px 20px;
   border: 1px solid #fff;
   border-radius: 50px;
   transition: 1s;
+  font-size: 12px;
 }
 
 .btn a {
@@ -173,6 +178,8 @@ aside {
 
 .menu_2 {
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .menu_2 ul li {
@@ -185,17 +192,38 @@ aside {
   padding: 5px;
 }
 
-.recently_played {
-  display: flex;
-  margin-bottom: 25px;
+.menu_2 a:hover {
+  color: #fff;
 }
 
-.album h2, .recently_played {
-  margin-left: 10px;
+.album_box {
+  padding: 25px 0;
+}
+
+.album_box h2, .subtitle_album_box {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.album_list {
+  display: flex;
+  margin-top: 20px;
 }
 
 .disc {
-  flex-basis: calc(100% / 6);
+  flex-basis: calc((100% / 6) - 40px);
+  margin: 10px 20px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.disc img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.artist {
+  border-radius: 50%;
 }
 
 footer {
