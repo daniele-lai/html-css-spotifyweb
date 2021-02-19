@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <title>Spotify</title>
 </head>
@@ -11,32 +16,36 @@
   <main>
     <!-- Barra aside -->
     <aside class="aside_bar">
-        <h1>Lorem</h1>
+        <h1><img class="logo" src="img/logo.svg" alt="Logo Spotify"></h1>
         <!-- Prima nav -->
         <nav>
           <ul>
-            <li><a href="#"><img src="img/home.svg" alt="Home">Lorem</a></li>
-            <li><a href="#"><img src="img/search.svg" alt="Home">Lorem</a></li>
-            <li><a href="#"><img src="img/library.svg" alt="Home">Lorem</a></li>
+            <li><a href="#"><img class="nav_icon" src="img/home.svg" alt="Home">Home</a></li>
+            <li><a href="#"><img class="nav_icon" src="img/search.svg" alt="Cerca">Cerca</a></li>
+            <li><a href="#"><img class="nav_icon" src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
           </ul>
         </nav>
         <!-- Sezione Playlist -->
-        <h2>Lorem</h2>
-        <h3><a href="#">Lorem</a></h3>
+        <h2 class="uppercase playlist_title">Playlist</h2>
+        <h3 class="playlist_subtitle"><a href="#"><i class="fas fa-plus-square plus"></i> Crea Playlist</a></h3>
           <nav class="playlist">
             <ul>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
-              <li><a href="#">Lorem</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
             </ul>
           </nav>
           <div class="john_doe">
-            <p><small><a href="#">Lorem Ipsum</a></small></p>
-            <h3>Lorem Ipsum</h3>
+            <a class="download" href="#"><img src="img/download.svg" alt="Download"> Installa app</a>
+            <hr class="grey">
+            <div class="profile">
+              <img src="img/profile.svg" alt="Profile">
+              <h3>John Doe</h3>
+            </div>
           </div>
     </aside>
     <!-- Sezione Album -->

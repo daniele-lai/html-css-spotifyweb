@@ -7,6 +7,7 @@
 body {
   height: 100vh;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
 }
 
 main {
@@ -14,8 +15,13 @@ main {
   display: flex;
 }
 
+/* Miscellanea */
 .grey {
-  color: #717171;
+  color: #666666;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* Barra Upgrade */
@@ -73,19 +79,44 @@ aside {
 
 .aside_bar a {
   text-decoration: none;
-  color: #717171;
+  color: #666666;
 }
 
 .aside_bar a:hover {
   color: #fff;
 }
 
-.aside_bar ul li a img {
+.aside_bar a:hover .nav_icon {
+  opacity: 1;
+}
+
+.logo {
+  width: 65%;
+  margin-bottom: 10px;
+}
+
+.nav_icon {
   height: 20px;
+  opacity: 0.5;
+  vertical-align: middle;
+  padding-right: 6px;
+  margin-bottom: 6px;
+}
+
+.plus {
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.playlist_title {
+  font-size: 18px;
+  margin: 12px 0 10px 0;
 }
 
 .playlist {
   overflow: auto;
+  line-height: 30px;
+  font-size: 16px;
 }
 
 .john_doe {
@@ -93,6 +124,42 @@ aside {
   flex-direction: column;
   margin-top: auto;
   justify-content: flex-end
+}
+
+.download {
+  display: flex;
+}
+
+.download:hover img {
+  opacity: 1;
+}
+
+.download img {
+  height: 25px;
+  opacity: 0.5;
+  padding-right: 7px;
+}
+
+.aside_bar hr {
+  border-bottom: transparent;
+  margin: 10px 20px 10px 0;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile img {
+  height: 30px;
+  width: 30px;
+  background-color: #666666;
+  border-radius: 50%;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+.profile:hover img {
+  background-color: #777777;
 }
 
 /* Sezione album */
@@ -114,7 +181,7 @@ aside {
 
 .menu_2 ul li a {
   text-decoration: none;
-  color: #717171;
+  color: #666666;
   padding: 5px;
 }
 
