@@ -86,13 +86,12 @@ aside {
 
 .playlist {
   overflow: auto;
-  height: 455px;
 }
 
 .john_doe {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  margin-top: auto;
   justify-content: flex-end
 }
 
