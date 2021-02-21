@@ -24,9 +24,19 @@ main {
   text-transform: uppercase;
 }
 
+.text_center {
+  text-align: center;
+}
+
 .bold {
   font-weight: 600;
 }
+
+.flex {
+  display: flex;
+}
+
+
 
 /* Barra Upgrade */
 .upgrade_bar {
@@ -248,6 +258,7 @@ aside {
   border-radius: 50%;
 }
 
+/* Footer */
 footer {
   position: fixed;
   left: 0;
@@ -255,4 +266,93 @@ footer {
   bottom: 0;
   height: 100px;
   background-color: #282828;
+}
+
+.footer_box.left {
+  flex-basis: 11%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_box.center {
+  flex-basis: 74%;
+}
+
+.footer_box.right {
+  flex-basis: 15%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.thumbnail {
+  align-items: center;
+}
+
+.thumbnail img {
+  height: 50px;
+  margin: 15px;
+}
+
+.thumbnail_text a {
+  font-size: 12px;
+}
+
+.icon_footer {
+  justify-content: center;
+  align-items: center;
+}
+
+.player_box {
+  justify-content: center;
+  align-items: center;
+}
+
+.player_item {
+  padding: 12px 10px;
+  font-size: 18px;
+}
+
+.player_item_play {
+  padding: 12px 15px;
+  font-size: 29px;
+}
+
+.player_control {
+  align-items: center;
+  justify-content: center;
+}
+
+.bar_player {
+  height: 4px;
+  width: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.bar_played {
+  height: 4px;
+  width: 30%;
+  background-color: #1DB954;
+  border-radius: 10px;
+  position: relative;
+}
+
+.circle_player {
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: flex-end;
+  position: absolute;
+  right: -1px;
+  bottom: -10px;
+  visibility: hidden;
+}
+
+.bar_player_2 {
+  height: 4px;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 10px;
 }
