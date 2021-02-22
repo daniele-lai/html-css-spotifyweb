@@ -291,10 +291,24 @@ footer {
 .thumbnail img {
   height: 50px;
   margin: 15px;
+  cursor: pointer;
 }
 
 .thumbnail_text a {
   font-size: 12px;
+  text-decoration: none;
+}
+
+.thumbnail_text a:hover {
+  text-decoration: underline;
+}
+
+.thumbnail_icon {
+  opacity: 0.5;
+}
+
+.thumbnail_icon:hover {
+  opacity: 1;
 }
 
 .icon_footer {
@@ -333,9 +347,13 @@ footer {
 .bar_played {
   height: 4px;
   width: 30%;
-  background-color: #1DB954;
+  background-color: #fff;
   border-radius: 10px;
   position: relative;
+}
+
+.player_box:hover .bar_played {
+  background-color: #1DB954;
 }
 
 .circle_player {
@@ -348,6 +366,11 @@ footer {
   right: -1px;
   bottom: -10px;
   visibility: hidden;
+  cursor: pointer;
+}
+
+.player_box:hover .circle_player {
+  visibility: visible;
 }
 
 .bar_player_2 {
@@ -355,4 +378,12 @@ footer {
   width: 60%;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.footer_box.right:hover .bar_played {
+  background-color: #1DB954;
+}
+
+.footer_box.right:hover .circle_player {
+  visibility: visible;
 }
