@@ -49,6 +49,7 @@ main {
   height: 55px;
   width: calc(100% - 201px);
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .btn {
@@ -467,6 +468,7 @@ footer {
     width: 55px;
     padding-left: 0;
     text-align: center;
+    height: calc(100% - 44px);
   }
 
   .logo {
@@ -519,5 +521,28 @@ footer {
     flex-basis: calc((100% / 2) - 40px);
   }
 
+  footer {
+    flex-wrap: wrap;
+    height: 145px;
+  }
+
+  .footer_box.left {
+    flex-basis: 37%;
+    height: 50%;
+    order: 2;
+  }
+
+  .footer_box.center {
+    flex-basis: 100%;
+    order: 1;
+    height: 50%;
+  }
+
+  .footer_box.right {
+    flex-basis: 50%;
+    order: 3;
+    height: 50%;
+    margin-left: auto;
+  }
 
 }
