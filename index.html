@@ -18,37 +18,51 @@
   <main>
     <!-- Barra aside -->
     <aside class="aside_bar bold">
-        <h1><img class="logo" src="img/logo.svg" alt="Logo Spotify"></h1>
+      <img class="logo" src="img/logo.svg" alt="Logo Spotify">
+      <img class="logo_xs" src="img/logo-small.svg" alt="Logo Spotify">
         <!-- Prima nav -->
-        <nav>
+      <nav class="menu_lg">
+        <ul>
+          <li><a href="#"><img class="nav_icon" src="img/home.svg" alt="Home">Home</a></li>
+          <li><a href="#"><img class="nav_icon" src="img/search.svg" alt="Cerca">Cerca</a></li>
+          <li><a href="#"><img class="nav_icon" src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
+        </ul>
+      </nav>
+      <nav class="menu_xs">
+        <ul>
+          <li><a href="#"><img class="nav_icon" src="img/home.svg" alt="Home"></a></li>
+          <li><a href="#"><img class="nav_icon" src="img/search.svg" alt="Cerca"></a></li>
+          <li><a href="#"><img class="nav_icon" src="img/libreria.svg" alt="Libreria"></a></li>
+        </ul>
+      </nav>
+      <!-- Sezione Playlist -->
+      <h2 class="uppercase playlist_title">Playlist</h2>
+      <h3 class="playlist_subtitle"><a href="#"><i class="fas fa-plus-square plus"></i> Crea Playlist</a></h3>
+        <nav class="playlist">
           <ul>
-            <li><a href="#"><img class="nav_icon" src="img/home.svg" alt="Home">Home</a></li>
-            <li><a href="#"><img class="nav_icon" src="img/search.svg" alt="Cerca">Cerca</a></li>
-            <li><a href="#"><img class="nav_icon" src="img/libreria.svg" alt="Libreria">La tua libreria</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
+            <li><a href="#">Nome Playlist</a></li>
           </ul>
         </nav>
-        <!-- Sezione Playlist -->
-        <h2 class="uppercase playlist_title">Playlist</h2>
-        <h3 class="playlist_subtitle"><a href="#"><i class="fas fa-plus-square plus"></i> Crea Playlist</a></h3>
-          <nav class="playlist">
-            <ul>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-              <li><a href="#">Nome Playlist</a></li>
-            </ul>
-          </nav>
-          <div class="john_doe">
-            <a class="download" href="#"><img src="img/download.svg" alt="Download"> Installa app</a>
-            <hr class="grey">
-            <div class="profile">
-              <img src="img/profile.svg" alt="Profile">
-              <h3>John Doe</h3>
-            </div>
+        <div class="john_doe">
+          <a class="download" href="#"><img src="img/download.svg" alt="Download"> Installa app</a>
+          <hr class="grey">
+          <div class="profile">
+            <img src="img/profile.svg" alt="Profile">
+            <h3>John Doe</h3>
           </div>
+        </div>
+        <div class="john_doe_xs">
+          <a class="download" href="#"><img src="img/download.svg" alt="Download"></a>
+          <div class="profile">
+            <img src="img/profile.svg" alt="Profile">
+          </div>
+        </div>
     </aside>
     <!-- Sezione Album -->
     <div class="album bold">

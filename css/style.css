@@ -108,6 +108,20 @@ aside {
 .logo {
   width: 65%;
   margin-bottom: 10px;
+  display: block;
+}
+
+.logo_xs {
+  height: 30px;
+  display: none;
+}
+
+.menu_lg {
+  display: block;
+}
+
+.menu_xs {
+  display: none;
 }
 
 .nav_icon {
@@ -139,6 +153,10 @@ aside {
   flex-direction: column;
   margin-top: auto;
   justify-content: flex-end
+}
+
+.john_doe_xs {
+  display: none;
 }
 
 .download {
@@ -218,6 +236,7 @@ aside {
 .album_list {
   display: flex;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 .disc {
@@ -386,4 +405,119 @@ footer {
 
 .footer_box.right:hover .circle_player {
   visibility: visible;
+}
+
+/* Responsive */
+/* Laptop */
+@media screen and (min-width:1024px) and (max-width:1440px) {
+  .disc {
+    flex-basis: calc((100% / 4) - 40px);
+  }
+
+  .menu_2 {
+    line-height: 30px;
+  }
+
+  .footer_box.left {
+    flex-basis: 20%;
+  }
+
+  .footer_box.center {
+    flex-basis: 60%;
+  }
+
+  .footer_box.right {
+    flex-basis: 20%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .disc {
+    flex-basis: calc((100% / 2) - 40px);
+  }
+
+  .menu_2 {
+    line-height: 30px;
+  }
+
+  .footer_box.left {
+    flex-basis: 30%;
+    justify-content: space-evenly;
+  }
+
+  .footer_box.center {
+    flex-basis: 40%;
+  }
+
+  .bar_player {
+    width: 60%;
+    margin: 0 10px;
+  }
+
+  .footer_box.right {
+    flex-basis: 30%;
+    justify-content: space-evenly;
+  }
+}
+
+/* Smartphone */
+@media screen and (max-width:767px) {
+  .aside_bar {
+    width: 55px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo_xs {
+    display: block;
+  }
+
+  .nav_icon {
+    margin-right: 0;
+    height: 30px;
+    margin: 6px 0;
+  }
+
+  .menu_lg {
+    display: none;
+  }
+
+  .menu_xs {
+    display: block;
+  }
+
+  .playlist_title, .playlist_subtitle, .playlist {
+    display: none;
+  }
+
+  .john_doe {
+    display: none;
+  }
+
+  .john_doe_xs {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .profile img {
+    margin: 8px 0;
+  }
+
+  .upgrade_bar {
+    width: calc(100% - 55px);
+  }
+
+  .disc {
+    flex-basis: calc((100% / 2) - 40px);
+  }
+
+
 }
