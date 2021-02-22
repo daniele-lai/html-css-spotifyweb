@@ -324,8 +324,12 @@ footer i {
   cursor: pointer;
 }
 
-.thumbnail_text a {
+.thumbnail_text {
   font-size: 12px;
+  cursor: pointer;
+}
+
+.thumbnail_text a {
   text-decoration: none;
 }
 
