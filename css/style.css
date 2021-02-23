@@ -36,6 +36,10 @@ main {
   display: flex;
 }
 
+.pd_left {
+  padding-left: 20px;
+}
+
 /* Barra Upgrade */
 .upgrade_bar {
   display: flex;
@@ -80,11 +84,10 @@ aside {
   display: flex;
   flex-direction: column;
   padding-top: 10px;
-  padding-left: 20px;
 }
 
 .aside_bar nav {
-  padding: 5px 0;
+  padding: 5px 0px;
 }
 
 .aside_bar nav ul {
@@ -120,6 +123,11 @@ aside {
   display: block;
 }
 
+.menu_lg ul li a:hover {
+  border-left: 4px solid #1DB954;
+  padding-left: 16px;
+}
+
 .menu_xs {
   display: none;
 }
@@ -140,8 +148,9 @@ aside {
 
 .playlist_title {
   font-size: 18px;
-  margin: 12px 0 10px 0;
+  margin: 12px 0 10px 0px;
 }
+
 
 .playlist {
   overflow: auto;
@@ -154,7 +163,7 @@ aside {
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  justify-content: flex-end
+  justify-content: flex-end;
 }
 
 .john_doe_xs {
