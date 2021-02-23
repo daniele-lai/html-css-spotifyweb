@@ -220,6 +220,7 @@ aside {
   text-decoration: none;
   color: #666666;
   padding: 5px;
+  position: relative;
 }
 
 .menu_2_item:hover {
@@ -255,7 +256,7 @@ aside {
 .disc_img img {
   width: 100%;
   margin-bottom: 10px;
-  transition: 1s;
+  transition: 0.6s;
 }
 
 .disc_img {
@@ -361,9 +362,22 @@ footer i {
   font-size: 18px;
 }
 
+.player_item, .player_item_right {
+  opacity: 0.8;
+}
+
+.player_item:hover, .player_item_right:hover {
+  opacity: 1;
+}
+
 .player_item_play {
   padding: 12px 15px;
   font-size: 29px;
+  transition: 0.5s;
+}
+
+.player_item_play:hover {
+  transform: scale(1.2);
 }
 
 .player_control {
