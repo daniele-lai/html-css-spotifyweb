@@ -48,6 +48,7 @@ main {
   width: calc(100% - 201px);
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
+  visibility: visible;
 }
 
 .btn {
@@ -584,4 +585,15 @@ footer i {
     margin-left: auto;
   }
 
+}
+
+/* Responsive in altezza */
+@media screen and (max-height:350px) {
+  .upgrade_bar {
+    visibility: hidden;
+  }
+
+  .album {
+    padding-top: 25px;
+  }
 }
