@@ -36,8 +36,6 @@ main {
   display: flex;
 }
 
-
-
 /* Barra Upgrade */
 .upgrade_bar {
   display: flex;
@@ -71,7 +69,6 @@ main {
 }
 
 /* Barra aside */
-
 aside {
   height: 100%;
   width: 240px;
@@ -117,6 +114,7 @@ aside {
   display: none;
 }
 
+/* Prima nav */
 .menu_lg {
   display: block;
 }
@@ -133,6 +131,7 @@ aside {
   margin-bottom: 6px;
 }
 
+/* Sezione Playlist */
 .plus {
   font-size: 35px;
   vertical-align: middle;
@@ -149,6 +148,7 @@ aside {
   font-size: 16px;
 }
 
+/* Sezione Account */
 .john_doe {
   display: flex;
   flex-direction: column;
@@ -197,7 +197,7 @@ aside {
   background-color: #777777;
 }
 
-/* Sezione album */
+/* Sezione Album */
 .album {
   height: 100%;
   width: 100%;
@@ -231,6 +231,7 @@ aside {
   border-bottom:3px solid #1DB954;
 }
 
+/* Sezione dischi */
 .album_box {
   padding: 25px 0;
 }
@@ -315,6 +316,7 @@ footer i {
   justify-content: space-around;
 }
 
+/* Footer Left */
 .thumbnail {
   align-items: center;
 }
@@ -352,6 +354,7 @@ footer i {
   align-items: center;
 }
 
+/* Footer Center */
 .player_box {
   justify-content: center;
   align-items: center;
@@ -423,6 +426,7 @@ footer i {
   visibility: visible;
 }
 
+/* Footer Right */
 .bar_player_2 {
   height: 4px;
   width: 60%;
